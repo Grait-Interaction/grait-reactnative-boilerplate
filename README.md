@@ -1,4 +1,4 @@
-# GRAIT REACT NATIVE BOILERPLATE
+# Grait React Native Boilerplate
 > A simple to use boilerplate for React Native that we use at Grait Interaction
 for our production line of React Native applications. It's a full featured
 boilerplate with redux, redux-persist and reactnavigation integrated, working
