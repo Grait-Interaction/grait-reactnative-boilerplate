@@ -17,9 +17,9 @@ the application.
 
 ### Configuration
 ##### How to rename the boilerplate
-You can change the name attribute in package.json, remove the ios and android folder and then run react-native upgrade,
-and just let react add the android/ios files. You need to change this line in index.js
+You can rename the cloned project with the provided renaming script.
 ```
-AppRegistry.registerComponent('GRNB', () => App);
+yarn run projectname YourProjectName
 ```
-Change GRNB to whatever you call you app.
+This will erase the ios and android folder so make sure youre doing this on a
+fresh copy were no changes has been made in these folders.
