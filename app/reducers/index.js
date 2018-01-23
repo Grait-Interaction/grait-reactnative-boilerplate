@@ -5,6 +5,7 @@ import immutableTransform from 'redux-persist-transform-immutable'
 // Import reducers
 import nav from './nav'
 import test from './test'
+import user from './user'
 
 const config = {
     transforms: [immutableTransform()],
@@ -18,4 +19,5 @@ const config = {
 export default persistCombineReducers(config, {
     nav: nav,
     test: test,
+    // user: user, // Uncomment to use user reducer
 })
