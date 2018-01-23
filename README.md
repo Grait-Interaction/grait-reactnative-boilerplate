@@ -19,7 +19,7 @@ the application.
 ##### How to rename the boilerplate
 You can rename the cloned project with the provided renaming script.
 ```
-yarn run projectname YourProjectName
+yarn run setProjectName YourProjectName
 ```
 This will erase the ios and android folder so make sure youre doing this on a
 fresh copy were no changes has been made in these folders.
