@@ -11,15 +11,15 @@ the application.
 - Redux
 - Redux Persist
 - React Navigation
-- Immutable
+- Immutablemark
 - Axios
 - Redux Promise Middleware
 
-### Configuration
-##### How to rename the boilerplate
-You can rename the cloned project with the provided renaming script.
-```
-yarn run setProjectName YourProjectName
-```
-This will erase the ios and android folder so make sure youre doing this on a
-fresh copy were no changes has been made in these folders.
+### How to use this boilerplate
+
+1. Clone or download this repo.
+2. Put content inside your own repo. Make sure you copy hidden files aswell
+3. Remove ios/ and android/ folders
+4. Open package.json and name field from GRNB to your project name
+5. open index.js and change GRNB to same as in 4.
+6. run ```react-native upgrade``` to reinstall ios/ and android/ folders with the new project name
