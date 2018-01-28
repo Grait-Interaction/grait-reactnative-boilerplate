@@ -23,3 +23,10 @@ the application.
 4. Open package.json and name field from GRNB to your project name
 5. open index.js and change GRNB to same as in 4.
 6. run ```react-native upgrade``` to reinstall ios/ and android/ folders with the new project name
+
+### Other nice packages to grab
+
+- [Material tabbar](https://github.com/timomeh/react-native-material-bottom-navigation)
+- [Moment](https://www.npmjs.com/package/moment)
+
+tbc
