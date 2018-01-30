@@ -11,7 +11,7 @@ the application.
 - Redux
 - Redux Persist
 - React Navigation
-- Immutablemark
+- Immutable
 - Axios
 - Redux Promise Middleware
 
@@ -21,8 +21,9 @@ the application.
 2. Put content inside your own repo. Make sure you copy hidden files aswell
 3. Remove ios/ and android/ folders
 4. Open package.json and name field from GRNB to your project name
-5. open index.js and change GRNB to same as in 4.
-6. run ```react-native upgrade``` to reinstall ios/ and android/ folders with the new project name
+5. open index.js and change app name GRNB to same name as in 4.
+6. run ```yarn install``` or ```npm install``` depending on your choice.
+7. run ```react-native upgrade``` to reinstall ios/ and android/ folders with the new project name
 
 ### Other nice packages to grab
 
