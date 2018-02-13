@@ -18,7 +18,7 @@ the application.
 ### How to use this boilerplate
 
 1. Clone or download this repo.
-2. Put content inside your own repo. Make sure you copy hidden files aswell
+2. Put content inside your own repo. Make sure you copy hidden files as well
 3. Remove ios/ and android/ folders
 4. Open package.json and name field from GRNB to your project name
 5. open index.js and change app name GRNB to same name as in 4.
