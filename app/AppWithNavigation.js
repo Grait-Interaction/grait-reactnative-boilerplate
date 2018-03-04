@@ -3,23 +3,21 @@ import { Text } from 'react-native'
 import { createRootNavigator } from './config/router'
 import { addNavigationHelpers } from 'react-navigation'
 import { connect } from 'react-redux'
+import { createReduxBoundAddListener, createReactNavigationReduxMiddleware } from 'react-navigation-redux-helpers';
 
 const Layout = createRootNavigator()
 
-const App = ({ dispatch, nav }) =>  {
+const middleware = createReactNavigationReduxMiddleware(
+    "root",
+    state => state.nav,
+);
+
+const addListener = createReduxBoundAddListener("root");
+
+const App = () => {
     return (
-        <Layout
-            navigation={addNavigationHelpers({
-                dispatch,
-                state: nav
-            })}
-        />
+        <Layout />
     )
 }
 
-
-const mapStateToProps = (state) => ({
-    nav: state.nav
-});
-
-export default connect(mapStateToProps)(App);
+export default App;
