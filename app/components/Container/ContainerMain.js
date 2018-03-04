@@ -1,13 +1,13 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, SafeAreaView } from 'react-native';
 
 import PropTypes from 'prop-types';
 
 const ContainerMain = ({ children }) => {
     return (
-        <View style={{flex: 1}}>
+        <SafeAreaView style={{flex: 1}} forceInset={{ top: 'always', bottom: 'always' }}>
             {children}
-        </View>
+        </SafeAreaView>
     )
 };
 
