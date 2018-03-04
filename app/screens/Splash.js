@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { StatusBar, Text, Button } from 'react-native';
+import { StatusBar, Text, Button, View } from 'react-native';
 import { connect } from 'react-redux';
 import axios from 'axios'
 
 import PropTypes from 'prop-types';
 
-import { ContainerMain } from '../components/Container';
 import { SplashLoader } from '../components/SplashLoader'
 
 class Splash extends Component {
@@ -28,10 +27,10 @@ class Splash extends Component {
 
     render() {
         return (
-            <ContainerMain>
+            <View style={{flex: 1}}>
                 <StatusBar barStyle="light-content" />
                 <SplashLoader />
-            </ContainerMain>
+            </View>
         )
     }
 };
