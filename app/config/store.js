@@ -13,6 +13,7 @@ if (process.env.NODE_ENV === 'development') {
     // middlewares.push(logger)
 }
 
+// Add middlewares to redux store
 middlewares.push(thunk)
 middlewares.push(promiseMiddleware())
 
