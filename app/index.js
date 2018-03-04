@@ -1,8 +1,6 @@
-import React, { Component }  from 'react'
-import { Text } from 'react-native'
-import { createRootNavigator } from './config/router'
-import { addNavigationHelpers } from 'react-navigation'
-import { Provider, connect } from 'react-redux'
+import React from 'react'
+// import { Text } from 'react-native'
+import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/es/integration/react'
 
 import { store, persistor } from './config/store'
