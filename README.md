@@ -74,5 +74,13 @@ External resources, We've put theme template files here
 - [Interactable](https://github.com/wix/react-native-interactable)
 - [React Native Camera](https://github.com/react-native-community/react-native-camera)
 - [React Native Icons](https://github.com/oblador/react-native-vector-icons)
+- [Image Picker](https://github.com/react-community/react-native-image-picker)
+- [Calendars](https://github.com/wix/react-native-calendars)
+- [Background Geolocation](https://github.com/mauron85/react-native-background-geolocation/issues/109)
+- [Animatable](https://github.com/oblador/react-native-animatable)
+- [Keep Awake](https://github.com/corbt/react-native-keep-awake)
+- [Network Info](https://github.com/pusherman/react-native-network-info)
+- [Device Info](https://github.com/rebeccahughes/react-native-device-info)
+- [Sensors](https://github.com/react-native-sensors/react-native-sensors)
 
 tbc
