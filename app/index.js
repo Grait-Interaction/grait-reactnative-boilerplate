@@ -1,5 +1,6 @@
 import React from 'react'
-// import { Text } from 'react-native'
+import { YellowBox } from 'react-native';
+
 import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/es/integration/react'
 
@@ -8,6 +9,8 @@ import { api } from './config/api'
 
 import AppWithNavigation from './AppWithNavigation'
 import { SplashLoader } from './components/SplashLoader'
+
+YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated', 'Module RCTImageLoader']);
 
 // Configure api connection
 api()

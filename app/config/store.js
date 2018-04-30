@@ -7,8 +7,8 @@ import { persistStore } from 'redux-persist'
 // Import reducers to prepare store
 import reducers from '../reducers'
 
+// Prepare list of middlewares to append to redux store
 const middlewares = []
-
 if (process.env.NODE_ENV === 'development') {
     // middlewares.push(logger)
 }
