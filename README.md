@@ -66,5 +66,6 @@ External resources, We've put theme template files here
 - [Network Info](https://github.com/pusherman/react-native-network-info)
 - [Device Info](https://github.com/rebeccahughes/react-native-device-info)
 - [Sensors](https://github.com/react-native-sensors/react-native-sensors)
+- [Flex Grid](https://github.com/GeekyAnts/react-native-easy-grid)
 
 tbc

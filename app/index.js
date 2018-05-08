@@ -1,12 +1,9 @@
 import React from 'react'
 import { YellowBox } from 'react-native';
-
 import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/es/integration/react'
-
 import { store, persistor } from './config/store'
 import { api } from './config/api'
-
 import AppWithNavigation from './AppWithNavigation'
 import { SplashLoader } from './components/SplashLoader'
 

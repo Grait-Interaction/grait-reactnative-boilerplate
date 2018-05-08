@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import { StatusBar, Text, Button, View } from 'react-native';
 import { connect } from 'react-redux';
 import axios from 'axios'
-
 import PropTypes from 'prop-types';
-
 import { SplashLoader } from '../components/SplashLoader'
 
 class Splash extends Component {

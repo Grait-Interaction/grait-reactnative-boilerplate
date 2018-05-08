@@ -1,16 +1,12 @@
 import { StackNavigator, TabNavigator } from 'react-navigation';
-import React, { Component } from 'react';
-import { View, Text, Platform, StatusBar, Alert } from 'react-native'
+import React from 'react';
+import { Text, Platform, StatusBar } from 'react-native'
 
 import { TabBar } from '../components/TabBar'
 import Home from '../screens/Home'
 import Welcome from '../screens/Welcome'
 import Login from '../screens/Login'
 import Splash from '../screens/Splash'
-
-const headerStyle = {
-    marginTop: Platform.OS === "android" ? StatusBar.currentHeight : 0
-};
 
 export const SignedOut = StackNavigator({
     Welcome: {
