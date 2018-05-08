@@ -9,7 +9,8 @@ import reducers from '../reducers'
 
 // Prepare list of middlewares to append to redux store
 const middlewares = []
-if (process.env.NODE_ENV === 'development') {
+
+if (__DEV__) {
     // middlewares.push(logger)
 }
 
@@ -17,7 +18,10 @@ if (process.env.NODE_ENV === 'development') {
 middlewares.push(thunk)
 middlewares.push(promiseMiddleware())
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+let composeEnhancers = compose
+if (__DEV__ && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) {
+    composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+}
 
 const store = createStore(
     reducers,
