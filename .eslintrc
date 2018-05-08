@@ -1,0 +1,7 @@
+{
+    "rules":{
+        "no-var": "error",
+        "semi": [ "error", "never" ],
+        "no-trailing-spaces": "error"
+    }
+}
