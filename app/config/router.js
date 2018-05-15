@@ -1,4 +1,4 @@
-import { StackNavigator, TabNavigator } from 'react-navigation';
+import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 import React from 'react';
 import { Text, Platform, StatusBar } from 'react-native'
 
@@ -8,7 +8,7 @@ import Welcome from '../screens/Welcome'
 import Login from '../screens/Login'
 import Splash from '../screens/Splash'
 
-export const SignedOut = StackNavigator({
+export const SignedOut = createStackNavigator({
     Welcome: {
         screen: Welcome,
         navigationOptions: {
@@ -26,7 +26,7 @@ export const SignedOut = StackNavigator({
     initialRouteName: "Welcome",
 })
 
-export const SignedIn = TabNavigator({
+export const SignedIn = createBottomTabNavigator({
     Home: {
         screen: Home,
         navigationOptions: {
@@ -54,7 +54,7 @@ export const SignedIn = TabNavigator({
      * If you want to use a custom tabBar component this is a great
      * starting point
      */
-    // tabBarComponent: TabBar,
+    tabBarComponent: TabBar,
 
     tabBarOptions: {
         style: {
@@ -64,7 +64,7 @@ export const SignedIn = TabNavigator({
 })
 
 export const createRootNavigator = () => {
-    return StackNavigator({
+    return createStackNavigator({
         SignedIn: {
             screen: SignedIn,
             navigationOptions: {

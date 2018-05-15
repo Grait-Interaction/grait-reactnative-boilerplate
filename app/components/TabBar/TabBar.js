@@ -38,7 +38,7 @@ class TabBar extends PureComponent{
         )
     }
 
-    _renderTabButton = (scene)=>{
+    _renderTabButton = (scene, title)=>{
         return(
             <View style={[styles.tabButton, scene.focused?styles.focused:null]}>
             </View>
@@ -62,16 +62,18 @@ class TabBar extends PureComponent{
         )
     }
 
-    render(){
+    render() {
 
         // Fetch and prepare useful props
         const {
             position,
             navigation,
-            jumpToIndex,
+            jumpTo,
             getOnPress,
             getTestIDProps,
             isLandscape,
+            getLabelText,
+            getParams
         } = this.props
 
         // Routes to be rendered
@@ -81,22 +83,22 @@ class TabBar extends PureComponent{
         return (
             <Animated.View style={styles.tabbar}>
 
-                {routes.map((route: NavigationRoute, index: number)=>{
+                {routes.map((route, index) => {
 
                     const focused = index === navigation.state.index
                     const scene = { route, index, focused }
 
-                    if (route.key == 'Middle') {
-                        return this._renderMiddleButton(index)
+                    if (route.key == 'Plus') {
+                        return this._renderPlusButton(index)
                     }
 
-                    return(
+                    return (
                         <TouchableWithoutFeedback
                             key={route.key}
                             // testID={testID}
                             // accessibilityLabel={accessibilityLabel}
-                            onPress={()=>(jumpToIndex(index))}>
-                                {this._renderTabButton(scene)}
+                            onPress={() => (jumpTo(scene.route.key))}>
+                            {this._renderTabButton(scene, getLabelText(scene))}
                         </TouchableWithoutFeedback>
                     )
                 })}
