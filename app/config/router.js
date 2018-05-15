@@ -54,7 +54,7 @@ export const SignedIn = createBottomTabNavigator({
      * If you want to use a custom tabBar component this is a great
      * starting point
      */
-    tabBarComponent: TabBar,
+    // tabBarComponent: TabBar,
 
     tabBarOptions: {
         style: {
