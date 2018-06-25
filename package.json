@@ -1,6 +1,6 @@
 {
   "name": "GRNB",
-  "version": "1.0.0",
+  "version": "0.55.3",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
