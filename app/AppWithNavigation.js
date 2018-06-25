@@ -1,12 +1,13 @@
 import React from 'react'
 import { createRootNavigator } from './config/router'
+import { setTopLevelNavigator } from './utils/NavigationService'
 
 const Layout = createRootNavigator()
 
 const App = () => {
     return (
-        <Layout />
+        <Layout ref={navigatorRef => { setTopLevelNavigator(navigatorRef) }} />
     )
 }
 
-export default App;
+export default App

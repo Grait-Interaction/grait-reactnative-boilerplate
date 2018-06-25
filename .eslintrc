@@ -1,7 +1,10 @@
 {
-    "rules":{
+    "parser": "babel-eslint",
+    "rules": {
         "no-var": "error",
-        "semi": [ "error", "never" ],
-        "no-trailing-spaces": "error"
+        "semi": [
+            "error",
+            "never"
+        ]
     }
 }

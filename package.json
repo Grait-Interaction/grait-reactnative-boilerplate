@@ -28,8 +28,10 @@
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.5",
     "babel-jest": "22.0.4",
     "babel-preset-react-native": "4.0.0",
+    "eslint": "^5.0.0",
     "jest": "22.0.4",
     "react-test-renderer": "16.2.0"
   },

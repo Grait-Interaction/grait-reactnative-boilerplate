@@ -45,6 +45,7 @@ This is where all React Native Javascript code goes. Inside this folder you'll f
 | **modules/**              | Place for modules |
 | **reducers/**             | Place for Redux reducers |
 | **screens/**              | In this folder you place all your different screens that the app consists of. The screens you define in router.js |
+| **utils/**                | Utilities and tools |
 | **AppWithNavigation.js**  | Only change if you need |
 | **index.js/**             | Only change if you need |
 

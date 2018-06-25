@@ -1,8 +1,8 @@
-import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
-import React from 'react';
+import { createStackNavigator, createBottomTabNavigator } from 'react-navigation'
+import React from 'react'
 import { Text, Platform, StatusBar } from 'react-native'
 
-import { TabBar } from '../components/TabBar'
+// import { TabBar } from '../components/TabBar'
 import Home from '../screens/Home'
 import Welcome from '../screens/Welcome'
 import Login from '../screens/Login'
