@@ -1,6 +1,6 @@
 import React from 'react'
 import { createRootNavigator } from './config/router'
-import { setTopLevelNavigator } from './utils/NavigationService'
+import { setTopLevelNavigator } from './utils/NavigationServices'
 
 const Layout = createRootNavigator()
 
