@@ -1,7 +1,7 @@
 {
-    "name": "ignite-grait-reactnative-boilerplate",
+    "name": "grait-reactnative-boilerplate",
     "description": "A description of your plugin.",
-    "version": "0.0.1",
+    "version": "2.56.0",
     "license": "MIT",
     "author": {
         "name": "Grait Interaction",
