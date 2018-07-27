@@ -1,8 +1,8 @@
 {
-    
     "generators": [
         "screen",
-        "component"
+        "component",
+        "action",
+        "reducer"
     ]
-    
 }

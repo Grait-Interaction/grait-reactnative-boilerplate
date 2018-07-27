@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
-import { StatusBar, View } from 'react-native'
+import { StatusBar, View, Text } from 'react-native'
 import { connect } from 'react-redux'
 import axios from 'axios'
-import PropTypes from 'prop-types'
-import { SplashLoader } from '../components/SplashLoader'
 
 class Splash extends Component {
 
@@ -23,7 +21,7 @@ class Splash extends Component {
         return (
             <View style={{ flex: 1 }}>
                 <StatusBar barStyle="light-content" />
-                <SplashLoader />
+                <Text>Loading...</Text>
             </View>
         )
     }

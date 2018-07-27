@@ -5,7 +5,6 @@ import { PersistGate } from 'redux-persist/es/integration/react'
 import { store, persistor } from './config/store'
 import { api } from './config/api'
 import AppWithNavigation from './AppWithNavigation'
-import { SplashLoader } from './components/SplashLoader'
 
 YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated', 'Module RCTImageLoader']);
 
@@ -19,7 +18,7 @@ const onBeforeLift = (data) => {
 export default () => (
     <Provider store={store}>
         <PersistGate
-            loading={<SplashLoader />}
+            // loading={<SplashLoader />}
             onBeforeLift={onBeforeLift}
             persistor={persistor}>
             <AppWithNavigation />

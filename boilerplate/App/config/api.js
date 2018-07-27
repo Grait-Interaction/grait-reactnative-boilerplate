@@ -1,5 +1,9 @@
 import axios from 'axios'
 
+export const PENDING = '_PENDING'
+export const OK = '_FULFILLED'
+export const BAD = '_REJECTED'
+
 export const api = () => {
 
     /**

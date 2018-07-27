@@ -1,0 +1,26 @@
+import { PENDING, OK, BAD } from '../config/api'
+
+const initialState = {
+    data: null,
+    loading: false,
+};
+
+export default (state = initialState, action) => {
+    switch (action.type) {
+
+        case ''+PENDING:
+            return {...state, loading: true}
+            break
+
+        case ''+BAD:
+            return {...state, loading: false}
+            break
+
+        case ''+OK:
+            return {...state, loading: false}
+            break
+
+        default:
+            return state
+    }
+}

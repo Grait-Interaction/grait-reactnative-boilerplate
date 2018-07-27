@@ -13,9 +13,9 @@ const add = async function (context) {
   const { ignite, filesystem } = context
 
   // install an NPM module and link it
-  await ignite.addModule(NPM_MODULE_NAME, { link: true, version: NPM_MODULE_VERSION })
+  // await ignite.addModule(NPM_MODULE_NAME, { link: true, version: NPM_MODULE_VERSION })
 
-  await ignite.addPluginComponentExample(EXAMPLE_FILE, { title: 'GraitReactnativeBoilerplate Example' })
+  // await ignite.addPluginComponentExample(EXAMPLE_FILE, { title: 'GraitReactnativeBoilerplate Example' })
 
   // Example of copying templates/GraitReactnativeBoilerplate to App/GraitReactnativeBoilerplate
   // if (!filesystem.exists(`${APP_PATH}/App/GraitReactnativeBoilerplate`)) {
@@ -37,9 +37,9 @@ const remove = async function (context) {
   const { ignite, filesystem } = context
 
   // remove the npm module and unlink it
-  await ignite.removeModule(NPM_MODULE_NAME, { unlink: true })
+  // await ignite.removeModule(NPM_MODULE_NAME, { unlink: true })
 
-  await ignite.removePluginComponentExample(EXAMPLE_FILE)
+  // await ignite.removePluginComponentExample(EXAMPLE_FILE)
 
   // Example of removing App/GraitReactnativeBoilerplate folder
   // const removeGraitReactnativeBoilerplate = await context.prompt.confirm(
