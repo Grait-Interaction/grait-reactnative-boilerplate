@@ -170,7 +170,7 @@ async function install(context) {
 
     // Wrap it up with our success message.
     print.info('')
-    print.info('🍽 Installed!')
+    print.info(' 🍽  Installed!')
     print.info('')
     print.info(print.colors.yellow(`  cd ${name}`))
     print.info(print.colors.yellow('  yarn run ios'))

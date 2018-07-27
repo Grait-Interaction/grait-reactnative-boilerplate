@@ -1,5 +1,5 @@
 {
-    "name": "grait-reactnative-boilerplate",
+    "name": "ignite-grait-reactnative-boilerplate",
     "description": "A description of your plugin.",
     "version": "2.56.0",
     "license": "MIT",
@@ -18,7 +18,7 @@
     "standard": {
         "parser": "babel-eslint"
     },
-    "url": "https://example.com/path/to/your/plugin",
+    "url": "",
     "repository": "githuborg/reponame",
     "dependencies": {
         "ramda": "^0.23.0"
