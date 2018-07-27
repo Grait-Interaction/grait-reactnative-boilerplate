@@ -122,7 +122,6 @@ async function install(context) {
     await mergePackageJsons()
     spinner.stop()
 
-
     // install any plugins, including ourselves if we have generators.
     // please note you should always do `stdio: 'inherit'` or it'll hang
 

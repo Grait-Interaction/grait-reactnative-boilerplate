@@ -13,7 +13,7 @@ module.exports = async function (context) {
     return
   }
 
-  const name = pascalCase(parameters.first)
+  const name = parameters.first
   const props = { name }
 
   // Copies the `thing.js.ejs` in your plugin's templates folder
