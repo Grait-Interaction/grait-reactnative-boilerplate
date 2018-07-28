@@ -1,8 +1,8 @@
 import axios from 'axios'
 
-export const GET_TEST = 'GET_TEST'
+export const GET_<%= props.name.toUpperCase() %> = 'GET_<%= props.name.toUpperCase() %>'
 
-export const getTest = () => ({
-    type: GET_TEST,
-    payload: axios.get('hello/')
+export const get<%= props.name %> = () => ({
+    type: GET_<%= props.name.toUpperCase() %>,
+    payload: axios.get('<%= props.name.toUpperCase() %>/')
 });
