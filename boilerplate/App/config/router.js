@@ -1,6 +1,7 @@
 import React from 'react'
 import { Text, Platform, StatusBar } from 'react-native'
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation'
+
 import Home from '../screens/Home'
 import Welcome from '../screens/Welcome'
 import Login from '../screens/Login'
