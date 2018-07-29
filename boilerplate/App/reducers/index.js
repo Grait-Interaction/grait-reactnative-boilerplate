@@ -2,7 +2,7 @@ import { persistCombineReducers } from 'redux-persist'
 import storage from 'redux-persist/es/storage'
 
 // Import reducers
-// import test from './test'
+import example from './example'
 
 const config = {
     // transforms: [],
@@ -14,5 +14,5 @@ const config = {
 
 // Paste reducers to be included in the store here
 export default persistCombineReducers(config, {
-    // test: test,
+    example: example
 })
