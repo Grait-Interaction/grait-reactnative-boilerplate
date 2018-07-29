@@ -1,8 +1,7 @@
 // Ignite CLI plugin for GraitReactnativeBoilerplate
 // ----------------------------------------------------------------------------
 
-const NPM_MODULE_NAME = 'react-native-MODULENAME'
-const NPM_MODULE_VERSION = '0.0.1'
+const BOILERPLATE = 'https://github.com/Grait-Interaction/grait-reactnative-boilerplate#conv-ignite'
 
 // const PLUGIN_PATH = __dirname
 // const APP_PATH = process.cwd()
@@ -13,7 +12,7 @@ const add = async function (context) {
   const { ignite, filesystem } = context
 
   // install an NPM module and link it
-  // await ignite.addModule(NPM_MODULE_NAME, { link: true, version: NPM_MODULE_VERSION })
+  await ignite.addModule(BOILERPLATE)
 
   // await ignite.addPluginComponentExample(EXAMPLE_FILE, { title: 'GraitReactnativeBoilerplate Example' })
 
