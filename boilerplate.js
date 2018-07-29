@@ -132,13 +132,13 @@ async function install(context) {
 
         const DEPS = [
             'axios@^0.18.0',
-            'react-navigation@^2.0.1',
+            'react-navigation@^2.9.3',
             'react-redux@^5.0.7',
             'redux@4.0.0',
             'redux-logger@^3.0.6',
             'redux-promise-middleware@^5.1.1',
             'redux-thunk@^2.2.0',
-            'redux-persist@^5.9.1'
+            'redux-persist@^5.10.0'
         ]
 
         if (answers['animatable'] === 'Yes') {
