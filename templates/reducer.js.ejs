@@ -1,4 +1,5 @@
 import { PENDING, OK, BAD } from '../config/api'
+import { GET_<%= props.name.toUpperCase() %> } from '../actions/<%= props.name.toLowerCase() %>'
 
 const initialState = {
     data: null,
@@ -8,17 +9,14 @@ const initialState = {
 export default (state = initialState, action) => {
     switch (action.type) {
 
-        case ''+PENDING:
+        case GET_<%= props.name.toUpperCase() %>+PENDING:
             return {...state, loading: true}
-            break
 
-        case ''+BAD:
+        case GET_<%= props.name.toUpperCase() %>+BAD:
             return {...state, loading: false}
-            break
 
-        case ''+OK:
+        case GET_<%= props.name.toUpperCase() %>+OK:
             return {...state, loading: false}
-            break
 
         default:
             return state

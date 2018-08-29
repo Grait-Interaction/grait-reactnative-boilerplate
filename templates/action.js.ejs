@@ -4,5 +4,5 @@ export const GET_<%= props.name.toUpperCase() %> = 'GET_<%= props.name.toUpperCa
 
 export const get<%= props.name %> = () => ({
     type: GET_<%= props.name.toUpperCase() %>,
-    payload: axios.get('<%= props.name.toUpperCase() %>/')
-});
+    payload: axios.get('<%= props.name.toLowerCase() %>/')
+})
